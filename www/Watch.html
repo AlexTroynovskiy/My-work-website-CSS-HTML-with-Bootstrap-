@@ -1,0 +1,524 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+    <title>APPLE STOCK</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid no-padding">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="img/logos/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">iPhone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="MacBook.html">MacBook </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Watch.html">Watch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="iPad.html">iPad </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="airpods.html">AirPods </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты </a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Обратный звонок</button>
+                    <div id="myModal" class="modal fade" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body text-center text-big">Оcтавьте свои контактные данные ниже!</div>
+                                <div class="modal-header">
+                                    <form action="send.php" method="post" class="form-block-form contactForm">
+                                        <input type="text" name="username" placeholder="Ваше Имя">
+                                        <input type="tel" name="phone" placeholder="Номер телефона">
+                                        <button type="submit" class="btn btn-outline-dark">Отправить</button>
+                                    </form>
+
+                                </div>
+
+                                <div class="modal-footer"><button class="btn btn-danger"
+                                        data-dismiss="modal">Закрыть</button></div>
+
+                            </div>
+                        </div>
+                    </div>
+            </nav>
+        </div>
+    </header>
+    <section class="pad_top">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="title-text">Watch Series 4</p>
+                        <p class="title-second">Начинаем новую жизнь.</p>
+                    </div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide col-12 col-md-4 block-top"
+                        data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active ">
+                                <img class="d-block w-100 size-watch" src="img/shop/watch-white1.jpg"
+                                    alt="Первый слайд">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 size-watch" src="img/shop/watch-white2.jpg"
+                                    alt="Второй слайд">
+                            </div>
+
+                        </div>
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="450" />
+                            <p class="text-big">Watch Series 4</p>
+                            <p class="text-small"> Корпус из алюминия серебристого цвета, спортивный ремешок белого
+                                цвета</p>
+                            <p> 40мм за 450 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide col-12 col-md-4 block-top"
+                        data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 size-watch" src="img/shop/watch-pink2.jpg" alt="Первый слайд">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 size-watch" src="img/shop/watch-pink1.jpg" alt="Второй слайд">
+                            </div>
+
+                        </div>
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="450" />
+                            <p class="text-big">Watch Series 4</p>
+                            <p class="text-small"> Корпус из алюминия золотого цвета, спортивный ремешок цвета «розовый
+                                песок»</p>
+                            <p> 40мм за 450 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide col-12 col-md-4 block-top"
+                        data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 size-watch" src="img/shop/watch-black1.jpg"
+                                    alt="Первый слайд">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 size-watch" src="img/shop/watch-black2.jpg"
+                                    alt="Второй слайд">
+                            </div>
+
+                        </div>
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="450" />
+                            <p class="text-big">Watch Series 4</p>
+                            <p class="text-small">Корпус из алюминия цвета «серый космос», спортивный ремешок чёрного
+                                цвета</p>
+                            <p> 40мм за 450 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide col-12 col-md-4 block-top"
+                        data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active ">
+                                <img class="d-block w-100 size-watch" src="img/shop/watch-serebro1.jpg"
+                                    alt="Первый слайд">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 size-watch" src="img/shop/watch-serebro2.jpg"
+                                    alt="Второй слайд">
+                            </div>
+
+                        </div>
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="450" />
+                            <p class="text-big">Watch Series 4</p>
+                            <p class="text-small"> Корпус из алюминия серебристого цвета, спортивный браслет цвета
+                                «белая ракушка»</p>
+                            <p> 40мм за 450 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide col-12 col-md-4 block-top"
+                        data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 size-watch" src="img/shop/watch-bronze1.jpg"
+                                    alt="Первый слайд">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 size-watch" src="img/shop/watch-bronze2.jpg"
+                                    alt="Второй слайд">
+                            </div>
+
+                        </div>
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="450" />
+                            <p class="text-big">Watch Series 4</p>
+                            <p class="text-small">Корпус из алюминия золотого цвета, спортивный браслет цвета «розовый
+                                песок»</p>
+                            <p> 40мм за 450 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide col-12 col-md-4 block-top"
+                        data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 size-watch" src="img/shop/watch-black-metal1.jpg"
+                                    alt="Первый слайд">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 size-watch" src="img/shop/watch-black-metal2.jpg"
+                                    alt="Второй слайд">
+                            </div>
+
+                        </div>
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="450" />
+                            <p class="text-big">Watch Series 4</p>
+                            <p class="text-small">Корпус из алюминия цвета «серый космос», спортивный браслет чёрного
+                                цвета</p>
+                            <p> 40мм за 450 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+
+                    <div id="image" class=" col-12 col-md-4 block-top block-bottom text-center">
+                        <a href="https://t.me/apple_stock_od">
+                            <img class="img_bord size-watch  " src="img/shop/wanch-metal.png">
+
+                        </a>
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="450" />
+                            <p class="text-big  ">Watch Series 4</p>
+                            <p class="text-small">Корпус из нержавеющей стали, миланский сетчатый браслет «чёрный
+                                космос» (S4 LTE)</p>
+                            <p> 40мм за 450 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+
+                    </div>
+                    <div id="image2" class=" col-12 col-md-4 block-top text-center ">
+                        <a href="https://t.me/apple_stock_od">
+                            <img class="img_bord size-watch" src="img/shop/white-metal1.png">
+                        </a>
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="450" />
+                            <p class="text-big">Watch Series 4</p>
+                            <p class="text-small">Корпус из нержавеющей стали, миланский сетчатый браслет (S4 LTE)</p>
+                            <p> 40мм за 450 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+                    <div id="image3" class=" col-12 col-md-4 block-top text-center">
+                        <a href="https://t.me/apple_stock_od">
+                            <img class="img_bord size-watch" src="img/shop/bronze-metal1.png">
+                        </a>
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="40000" />
+                            <p class="text-big">Watch Series 4</p>
+                            <p class="text-small">Корпус из нержавеющей стали золотистого цвета, миланский сетчатый
+                                браслет (S4 LTE)</p>
+                            <p> 40мм за 450 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="Watch Nike+">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="title-text">Watch Nike +</p>
+                        <p class="title-second">Подключайтесь к спортивному миру.</p>
+                    </div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide col-12 col-md-4 block-top block-bottom"
+                        data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active ">
+                                <img class="d-block w-100 size-watch" src="img/shop/nike-watch.jpg" alt="Первый слайд">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 size-watch" src="img/shop/nike-watch2.jpg" alt="Второй слайд">
+                            </div>
+
+                        </div>
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="450" />
+                            <p class="text-big">Watch Nike +</p>
+                            <p class="text-small"> Корпус из алюминия серебристого цвета, спортивный ремешок Nike цвета
+                                «чистая платина/чёрный»</p>
+                            <p> 40мм за 450 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide col-12 col-md-4 block-top block-bottom"
+                        data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 size-watch" src="img/shop/nike-watch-black1.jpg"
+                                    alt="Первый слайд">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 size-watch" src="img/shop/nike-watch-black2.jpg"
+                                    alt="Второй слайд">
+                            </div>
+
+                        </div>
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="450" />
+                            <p class="text-big">Watch Nike +</p>
+                            <p class="text-small"> Корпус из алюминия серебристого цвета, спортивный ремешок Nike цвета
+                                «чистая платина/чёрный»</p>
+                            <p> 40мм за 450 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide col-12 col-md-4 block-top block-bottom"
+                        data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 size-watch" src="img/shop/nike-watch-sport.jpg"
+                                    alt="Первый слайд">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 size-watch" src="img/shop/nike-watch-sport1.jpg"
+                                    alt="Второй слайд">
+                            </div>
+
+                        </div>
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="450" />
+                            <p class="text-big">Watch Nike +</p>
+                            <p class="text-small">Корпус из алюминия серебристого цвета, спортивный браслет Nike цвета
+                                «снежная вершина»</p>
+                            <p> 40мм за 450 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="title-text">Watch Series 3</p>
+                            <p class="title-second">Будьте активнее. Следите за здоровьем. Оставайтесь на связи.</p>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div id="carouselExampleSlidesOnly" class="carousel slide col-12 col-md-4 block-top"
+                            data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active ">
+                                    <img class="d-block w-100 size-watch" src="img/shop/watch-3.jpg" alt="Первый слайд">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 size-watch" src="img/shop/watch3-2.jpg"
+                                        alt="Второй слайд">
+                                </div>
+
+                            </div>
+                            <form action="send.php" method="POST" class="text-center orderForm watch">
+                                <input type="hidden" name="name" value="Watch series 4" />
+                                <input type="hidden" name="price" value="295" />
+                                <p class="text-big">Watch S3</p>
+                                <p class="text-small">Корпус из серебристого алюминия, спортивный ремешок белого цвета
+                                </p>
+                                <p> 38мм за 295 $</p>
+                                <button type="submit" class="btn btn-success">Заказать</button>
+                            </form>
+                        </div>
+                        <div id="carouselExampleSlidesOnly" class="carousel slide col-12 col-md-4 block-top"
+                            data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100 size-watch" src="img/shop/watch3-1-black.jpg"
+                                        alt="Первый слайд">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100 size-watch" src="img/shop/watch3-2-black.jpg"
+                                        alt="Второй слайд">
+                                </div>
+
+                            </div>
+                            <form action="send.php" method="POST" class="text-center orderForm watch">
+                                <input type="hidden" name="name" value="Watch series 4" />
+                                <input type="hidden" name="price" value="330" />
+                                <p class="text-big">Watch S3</p>
+                                <p class="text-small">Корпус из алюминия цвета «серый космос», спортивный ремешок
+                                    чёрного цвета</p>
+                                <p> 42мм за 330 $</p>
+                                <button type="submit" class="btn btn-success">Заказать</button>
+                            </form>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <section id="questions" class="block-top bg-fa pad_top">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="title-text">Остались вопросы?</p>
+
+
+                        <p class="title-second">Оставьте заявку и мы с радостью вам поможем.</p>
+                    </div>
+                    <div style="margin-top: 60px;" class="col-12 form-block">
+                        <form id="callback" action="send.php" method="post" class="form-block-form contactForm">
+                            <input type="text" name="username" placeholder="Ваше Имя">
+                            <input type="tel" name="phone" placeholder="Номер телефона">
+                            <button type="submit" class="btn btn-dark">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-f2 ">
+        <div class="container-fluid">
+            <div class="container">
+                <div style="padding-top: 20px;" class="row">
+                    <div class=" col-12 col-md-3 text-center text-black">
+                        <i class="fa fa-apple fa-2x"></i>
+                        <p class="text-big">Оригинальная техника</p>
+                        <p>Мы продаем только качесвенную и оригинальную технику Apple.</p>
+                    </div>
+                    <div class=" col-12 col-md-3 text-center text-black">
+
+                        <i class="fa fa-book fa-2x"></i>
+                        <p class="text-big">Официальная гарантия</p>
+                        <p>На все iPhone действует официальная гарантия Apple 1 год.</p>
+                    </div>
+
+
+                    <div class=" col-12 col-md-3 text-center text-black">
+                        <i class="fa fa-car fa-2x"></i>
+                        <p class="text-big">Доставка</p>
+                        <p>Мы осуществляем доставку по Одессе в день заказа. По Украине согласно срокам курьерской
+                            службы.</p>
+                    </div>
+
+
+                    <div class=" col-12 col-md-3 text-center text-black">
+                        <i class="fa fa-info fa-2x"></i>
+                        <p class="text-big">Поддержка</p>
+                        <p>Для консультации с клиентами действует круглосуточная поддержка.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                <div style="padding-top: 10px;" class="row">
+                    <div id="fa-icon" ; class="сol-12 col-md-4 text-center">
+                        <a href="https://instagram.com/apple_stock_?igshid=i91abrrs5tdg"><i style="color: #FF0080;"
+                                class="fa fa-instagram fa-lg"></i></a>
+                        <a href="https://t.me/apple_stock_od"><i
+                                style="color:#0080FF;margin-left: 30px; margin-right: 30px;"
+                                class="fa fa-telegram fa-lg"></i></a>
+                        <a href="#"><i style="color: #2E2EFE;" class="fa fa-facebook fa-lg  "></i></a>
+                    </div>
+                    <div class="сol-12 col-md-4 text-center">
+                        <p style="color: #E6E6E6; font-weight: 450; ">+38(063)-021-54-22</p>
+                    </div>
+                    <div class="сol-12 col-md-4 text-center">
+                        <p style="color: #E6E6E6; font-weight: 450;  "> Пироговская 7/9 к1 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="orderModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <form action="send.php" method="POST" class="modal-content contactOrderForm">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong><span class="price"></span></strong></p>
+                    <div class="form-block-form">
+                        <input type="hidden" name="order" value="" />
+                        <input type="text" name="username" placeholder="Ваше Имя">
+                        <input type="tel" name="phone" placeholder="Номер телефона">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-primary">Заказать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+        $(window).load(function () {
+            $(".twentytwenty-container").twentytwenty({
+                default_offset_pct: 0.7
+            });
+        });
+    </script>
+    <script src="/js/script.js"></script>
+    <script src="https://use.fontawesome.com/1c13f3fb74.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

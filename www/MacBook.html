@@ -1,0 +1,343 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+   <title>APPLE STOCK</title>
+</head>
+
+<body>
+   <header>
+      <div class="container-fluid no-padding">
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><img src="img/logos/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="shop.html">iPhone</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="MacBook.html">MacBook </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="Watch.html">Watch</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="iPad.html">iPad </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="airpods.html">AirPods </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contacts.html">Контакты </a>
+                  </li>
+               </ul>
+               <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Обратный звонок</button>
+               <div id="myModal" class="modal fade" tabindex="-1">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-body text-center text-big">Оcтавьте свои контактные данные ниже!</div>
+                        <div class="modal-header">
+                           <form action="send.php" method="post" class="form-block-form contactForm">
+                              <input type="text" name="username" placeholder="Ваше Имя">
+                              <input type="tel" name="phone" placeholder="Номер телефона">
+                              <button type="submit" class="btn btn-outline-dark">Отправить</button>
+                           </form>
+
+                        </div>
+
+                        <div class="modal-footer"><button class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </div>
+   </header>
+   <!--Gallery -->
+   <section>
+      <div class="container-fluid">
+         <div class="container">
+            <div class="row block-top block-bottom">
+               <div class=" col-12 col-md-4 ">
+
+                  <div>
+                     <img src="img/shop/macbook-pro-2018.png">
+                  </div>
+
+
+               </div>
+               <form action="send.php" method="POST" class=" col-12 col-md-8 text-center orderForm mac">
+                  <p class="title-text">MacBook Pro 2018 ( 13” Core i5 2.3GHz/ 8GB/ 256GB SSD c Touch Bar )</p>
+                  <input type="hidden" name="name"
+                     value="MacBook Pro 2018 ( 13” Core i5 2.3GHz/ 8GB/ 256GB SSD c Touch Bar )" />
+                  <input type="hidden" name="price" value="1210" />
+                  <div class="form-group">
+                     <label>Цвет</label>
+                     <select class="form-control" name="color">
+                        <option value="Серый космос" selected>Серый космос</option>
+                        <option value="Серебристый">Серебристый</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <label>Модель</label>
+                     <select class="form-control" name="model">
+                        <option value="Pro 2018 ( 13” Core i5 2.3GHz/ 8GB/ 256GB SSD c Touch Bar )" data-price="1680"
+                           selected>Pro 2018 ( 13” Core i5 2.3GHz/ 8GB/ 256GB SSD c Touch Bar )</option>
+                        <option value="Pro 2018 ( 13” Core i5 2.3GHz/ 8GB/ 128GB SSD  )" data-price="1210">Pro 2018 (
+                           13” Core i5 2.3GHz/ 8GB/ 128GB SSD )</option>
+                        <option value="Pro 2018 ( 15” Core i7 2.2GHz/ 16GB/ 256GB SSD c Touch Bar )" data-price="2400">
+                           Pro 2018 ( 15” Core i7 2.6GHz/ 16GB/Radion Pro 555X 4GB/ 256GB SSD c Touch Bar )</option>
+                        <option value="Pro 2018 ( 15” Core i7 2.6GHz/ 16GB/ 512GB SSD c Touch Bar )" data-price="2700">
+                           Pro 2018 ( 15” Core i9 2.3GHz/ 16GB/ /Radion Pro 560 4GB/ 512GB SSD c Touch Bar )</option>
+                     </select>
+                  </div>
+                  <p><strong class="price">от 1210 $.</strong></p>
+                  <div class="form-group">
+                     <button type="submit" class="btn btn-success">Заказать</button>
+                  </div>
+               </form>
+            </div>
+            <div class="row block-top block-bottom">
+               <div class=" col-12 col-md-4 ">
+
+                  <div>
+                     <img src="img/shop/MacBook Air 13.jpg">
+                  </div>
+
+
+               </div>
+               <form action="send.php" method="POST" class=" col-12 col-md-8 text-center orderForm mac">
+                  <p class="title-text">MacBook Air ( 13” i5 1.6GHz/ 8GB/ 128GB SSD с Touch ID )</p>
+                  <input type="hidden" name="name" value="MacBook Air ( 13” 1.6GHz/ 8GB/ 128GB SSD с Touch ID )" />
+                  <input type="hidden" name="price" value="1110" />
+                  <div class="form-group">
+                     <label>Цвет</label>
+                     <select class="form-control" name="color">
+                        <option value="Серый космос" selected>Серый космос</option>
+                        <option value="Серебристый">Серебристый</option>
+                        <option value="Золотой">Золотой</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <label>Модель</label>
+                     <select class="form-control" name="model">
+                        <option value="Air ( 13” 1.6GHz/ 8GB/ 128GB SSD с Touch ID )" data-price="1110" selected>Air (
+                           13” i5 1.6GHz/ 8GB/ 128GB SSD с Touch ID )</option>
+                        <option value="Air ( 13” Core i5 2.3GHz/ 8GB/ 512GB SSD c Touch Bar )" data-price="137990">Air (
+                           13” Core i5 2.3GHz/ 8GB/ 512GB SSD c Touch Bar )</option>
+                     </select>
+                  </div>
+                  <p><strong class="price">от 1110 $.</strong></p>
+                  <div class="form-group">
+                     <button type="submit" class="btn btn-success">Заказать</button>
+                  </div>
+               </form>
+            </div>
+            <div class="row block-top block-bottom">
+               <div class=" col-12 col-md-4 ">
+
+                  <div>
+                     <img src="img/shop/Apple MacBook 12.jpg">
+                  </div>
+
+
+               </div>
+               <form action="send.php" method="POST" class=" col-12 col-md-8 text-center orderForm mac">
+                  <p class="title-text">MacBook 12 ( 13” Core i5 1.3GHz/ 8GB/ 512GB SSD )</p>
+                  <input type="hidden" name="name"
+                     value="MacBook 12 ( 13” Core i5 2.3GHz/ 8GB/ 256GB SSD c Touch Bar )" />
+                  <input type="hidden" name="price" value="1090" />
+                  <div class="form-group">
+                     <label>Цвет</label>
+                     <select class="form-control" name="color">
+                        <option value="Серый космос" selected>Серый космос</option>
+                        <option value="Серебристый">Серебристый</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <label>Модель</label>
+                     <select class="form-control" name="model">
+                        <option value="12 ( 13” Core i5 2.3GHz/ 8GB/ 256GB SSD c Touch Bar )" data-price="1450"
+                           selected>MacBook 12 ( 13” Core i5 1.3GHz/ 8GB/ 512GB SSD )</option>
+                        <option value="12 ( 13” Core i5 2.3GHz/ 8GB/ 512GB SSD c Touch Bar )" data-price="1090">12 ( 13"
+                           Core M3 1.2GHz/ 8GB/ 256GB SSD )</option>
+                     </select>
+                  </div>
+                  <p><strong class="price">от 1090 $.</strong></p>
+                  <div class="form-group">
+                     <button type="submit" class="btn btn-success">Заказать</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section>
+      <div class="cotainer-fluid">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <p class="text-center title-text">iMac Pro</p>
+                  <p class="title-second text-center">Прокачен для профи.</p>
+               </div>
+
+               <div class="col-12 col-md-6">
+                  <img src="img/shop/iMac Pro.jpg">
+               </div>
+               <form action="send.php" method="POST" style="font-weight: 500" class="col-12 col-md-6 orderForm">
+                  <input type="hidden" name="name" value="iMac Pro" />
+                  <p>8-ядерный процессор Intel Xeon W с тактовой частотой 3,2 ГГц.</p>
+                  <p>Ускорение Turbo Boost до 4,2 ГГц.</p>
+                  <p>32 ГБ памяти ECC 2666 МГц, возможна конфигурация до 128 ГБ.</p>
+                  <p>SSD‑накопитель ёмкостью 1 ТБ1.</p>
+                  <p>Графический процессор Radeon Pro Vega 56 с 8 ГБ памяти HBM2.</p>
+                  <p>10Gb Ethernet.</p>
+                  <p>Четыре порта Thunderbolt 3.</p>
+                  <p>Дисплей Retina 5K 27 дюймов с расширенным цветовым охватом (P3) и разрешением 5120х2880 пикселей.
+                  </p>
+
+                  <button type="submit" class="btn btn-success text-center">Купить</button>
+               </form>
+            </div>
+
+
+         </div>
+      </div>
+      </div>
+   </section>
+   <section id="questions" class="block-top bg-fa pad_top">
+      <div class="container-fluid">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 text-center">
+                  <p class="title-text">Остались вопросы?</p>
+
+
+                  <p class="title-second">Оставьте заявку и мы с радостью вам поможем.</p>
+               </div>
+               <div style="margin-top: 60px;" class="col-12 form-block">
+                  <form id="callback" action="send.php" method="post" class="form-block-form contactForm">
+                     <input type="text" name="username" placeholder="Ваше Имя">
+                     <input type="tel" name="phone" placeholder="Номер телефона">
+                     <button type="submit" class="btn btn-dark">Отправить</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="bg-black">
+      <div class="container-fluid">
+         <div class="container">
+            <div style="padding-top: 20px;" class="row">
+               <div class=" col-12 col-md-3 text-center text-white">
+                  <i class="fa fa-apple fa-2x"></i>
+                  <p class="text-big-white">Оригинальная техника</p>
+                  <p>Мы продаем только качесвенную и оригинальную технику Apple.</p>
+               </div>
+               <div class=" col-12 col-md-3 text-center text-white">
+
+                  <i class="fa fa-book fa-2x"></i>
+                  <p class="text-big-white">Официальная гарантия</p>
+                  <p>На все iPhone действует официальная гарантия Apple 1 год.</p>
+               </div>
+
+
+               <div class=" col-12 col-md-3 text-center text-white">
+                  <i class="fa fa-car fa-2x"></i>
+                  <p class="text-big-white">Доставка</p>
+                  <p>Мы осуществляем доставку по Одессе в день заказа. По Украине согласно срокам курьерской службы.</p>
+               </div>
+
+
+               <div class=" col-12 col-md-3 text-center text-white">
+                  <i class="fa fa-info fa-2x"></i>
+                  <p class="text-big-white">Поддержка</p>
+                  <p>Для консультации с клиентами действует круглосуточная поддержка.</p>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+
+   </section>
+
+
+   <footer>
+      <div class="container-fluid">
+         <div class="container">
+            <div style="padding-top: 10px;" class="row">
+               <div id="fa-icon" ; class="сol-12 col-md-4 text-center">
+                  <a href="https://instagram.com/apple_stock_?igshid=i91abrrs5tdg"><i style="color: #FF0080;"
+                        class="fa fa-instagram fa-lg"></i></a>
+                  <a href="https://t.me/apple_stock_od"><i style="color:#0080FF;margin-left: 30px; margin-right: 30px;"
+                        class="fa fa-telegram fa-lg"></i></a>
+                  <a href="#"><i style="color: #2E2EFE;" class="fa fa-facebook fa-lg  "></i></a>
+               </div>
+               <div class="сol-12 col-md-4 text-center">
+                  <p style="color: #E6E6E6; font-weight: 450; ">+38(063)-021-54-22</p>
+               </div>
+               <div class="сol-12 col-md-4 text-center">
+                  <p style="color: #E6E6E6; font-weight: 450;  "> Пироговская 7/9 к1 </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <div id="orderModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+         <form action="send.php" method="POST" class="modal-content contactOrderForm">
+            <div class="modal-header">
+               <h5 class="modal-title"></h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <p><strong><span class="price"></span></strong></p>
+               <div class="form-block-form">
+                  <input type="hidden" name="order" value="" />
+                  <input type="text" name="username" placeholder="Ваше Имя">
+                  <input type="tel" name="phone" placeholder="Номер телефона">
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+               <button type="submit" class="btn btn-primary">Заказать</button>
+            </div>
+         </form>
+      </div>
+   </div>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+   <script src="js/jquery.event.move.js"></script>
+   <script src="js/jquery.twentytwenty.js"></script>
+   <script>
+      $(window).load(function () {
+         $(".twentytwenty-container").twentytwenty({ default_offset_pct: 0.7 });
+      });
+   </script>
+   <script src="/js/script.js"></script>
+   <script src="https://use.fontawesome.com/1c13f3fb74.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

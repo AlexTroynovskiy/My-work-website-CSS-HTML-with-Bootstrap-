@@ -1,0 +1,350 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+    <title>APPLE STOCK</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid no-padding">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html"><img src="img/logos/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">iPhone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="MacBook.html">MacBook </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Watch.html">Watch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="iPad.html">iPad </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="airpods.html">AirPods </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты </a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Обратный звонок</button>
+                    <div id="myModal" class="modal fade" tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body text-center text-big">Оcтавьте свои контактные данные ниже!</div>
+                                <div class="modal-header">
+                                    <form action="send.php" method="post" class="form-block-form contactForm">
+                                        <input type="text" name="username" placeholder="Ваше Имя">
+                                        <input type="tel" name="phone" placeholder="Номер телефона">
+                                        <button type="submit" class="btn btn-outline-dark">Отправить</button>
+                                    </form>
+
+                                </div>
+
+                                <div class="modal-footer"><button class="btn btn-danger"
+                                        data-dismiss="modal">Закрыть</button></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="pad_top">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="title-text">AirPods</p>
+                        <p class="title-second">Никаких проводов. Никаких сложностей. Чистая магия.</p>
+                    </div>
+                    <div class=" col-12 col-md-4 block-top block-bottom text-center">
+
+                        <img class="img_bord size-watch  " src="img/shop/airPods.jpg">
+
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="175" />
+
+                            <p class="text-small"> AirPods в футляре с возможностью беспроводной зарядки</p>
+                            <p> 197 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+                    <div class=" col-12 col-md-4 block-top block-bottom text-center">
+
+                        <img class="img_bord size-watch  " src="img/shop/airPods1.jpg">
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="40000" />
+
+                            <p class="text-small">AirPods в зарядном футляре</p>
+                            <p>175 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+                    <div class=" col-12 col-md-4 block-top block-bottom text-center">
+
+                        <img class="size-watch  " src="img/shop/imageService.jpg">
+
+
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="80" />
+
+                            <p class="text-small"> Футляр с возможностью беспроводной зарядки</p>
+                            <p>80 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+    </section>
+    <section class="pad_top">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="title-text">Гравировка на AirPods</p>
+                        <p class="text-big-normal">Гравировка не сотрется и не потускнеет. Мы сможем воплотить все Ваши
+                            идеи и мысли в гравировку на AirPods! Стань индивидуальным — придай шарма своим AirPods</p>
+                    </div>
+                    <div class=" col-12 col-md-4 block-top block-bottom text-center">
+
+                        <img class="img_bord size-watch  " src="img/shop/black-air.pods.jpg">
+
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="70" />
+                            <p class="text-big  "> Black</p>
+                            <p class="text-small"> Обновит ваши AirPods</p>
+                            <p>От 70 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+                    <div class=" col-12 col-md-4 block-top block-bottom text-center">
+
+                        <img class="img_bord size-watch  " src="img/shop/blue-air.pods.jpg">
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="70" />
+                            <p class="text-big  ">Blue AirPods</p>
+                            <p class="text-small">Вы любите синиий цвет и хотели бы синие аксесуары?</p>
+                            <p>От 70 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+                    <div class=" col-12 col-md-4 block-top block-bottom text-center">
+
+                        <img class="size-watch  " src="img/shop/red-air.pods.jpg">
+
+
+                        <form action="send.php" method="POST" class="text-center orderForm watch">
+                            <input type="hidden" name="name" value="Watch series 4" />
+                            <input type="hidden" name="price" value="70" />
+                            <p class="text-big  "> Pink AirPods </p>
+                            <p class="text-small"> Твой стиль розовий? Тогда AirPods PINK тебя ждут!</p>
+                            <p>От 70 $</p>
+                            <button type="submit" class="btn btn-success">Заказать</button>
+                        </form>
+                    </div>
+    </section>
+    <section id="about-airPods">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="title-text">Ноль проводов. Максимум преимуществ</p>
+                        <p class="text-small">Достаньте их из футляра — и они уже готовы к работе со всеми вашими
+                            устройствами. Наденьте их — и они мгновенно подключатся. Начните говорить — ваш голос
+                            услышат чётко и ясно. Удивительное сочетание минимализма и высоких технологий.
+                            Фантастический результат.</p>
+                    </div>
+                    <div class="col-md-1"> </div>
+                    <div class="col-12 col-md-10 block-top">
+                        <img src="img/shop/arm.jpg">
+                    </div>
+                    <div class="col-md-1"> </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-airPods" class="bg-fa block-top">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 ">
+                        <img src="img/shop/airpods-head.png">
+                    </div>
+                    <div class="col-12 col-md-6 text-center">
+                        <p class="title-text">Звучат чисто. Слышат чётко</p>
+                        <p class="text-small">AirPods позволяют слушать музыку 5 часов без подзарядки — это лучший
+                            показатель в индустрии. Время работы в режиме телефонного разговора теперь составляет до 3
+                            часов. Нужна быстрая подзарядка? Уберите наушники AirPods обратно в футляр на 15 минут, и
+                            потом вы сможете ещё 3 часа слушать музыку или 2 часа разговаривать по телефону. А если
+                            нужно проверить заряд аккумулятора, просто поднесите AirPods к iPhone или спросите у Siri:
+                            «Сколько заряда в моих AirPods?».</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-airPods" class=" block-top">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 ">
+                        <img src="img/shop/energy-airpods.png">
+                    </div>
+                    <div class="col-12 col-md-6 text-center block-top">
+                        <p class="title-text block-top">Положите — зарядите</p>
+                        <p class="text-small">Заряжать AirPods очень просто: положите новый футляр AirPods с
+                            возможностью беспроводной зарядки на устройство для беспроводной зарядки стандарта Qi. Это
+                            всё, что нужно. Светящийся индикатор на передней панели футляра означает, что ваши AirPods
+                            заряжаются. А если под рукой нет устройства для беспроводной зарядки, то футляр можно
+                            зарядить через разъём Lightning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="questions" class="block-top bg-fa pad_top">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="title-text">Остались вопросы?</p>
+
+
+                        <p class="title-second">Оставьте заявку и мы с радостью вам поможем.</p>
+                    </div>
+                    <div style="margin-top: 60px;" class="col-12 form-block">
+                        <form id="callback" action="send.php" method="post" class="form-block-form contactForm">
+                            <input type="text" name="username" placeholder="Ваше Имя">
+                            <input type="tel" name="phone" placeholder="Номер телефона">
+                            <button type="submit" class="btn btn-dark">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-f2 ">
+        <div class="container-fluid">
+            <div class="container">
+                <div style="padding-top: 20px;" class="row">
+                    <div class=" col-12 col-md-3 text-center text-black">
+                        <i class="fa fa-apple fa-2x"></i>
+                        <p class="text-big">Оригинальная техника</p>
+                        <p>Мы продаем только качесвенную и оригинальную технику Apple.</p>
+                    </div>
+                    <div class=" col-12 col-md-3 text-center text-black">
+
+                        <i class="fa fa-book fa-2x"></i>
+                        <p class="text-big">Официальная гарантия</p>
+                        <p>На все iPhone действует официальная гарантия Apple 1 год.</p>
+                    </div>
+
+
+                    <div class=" col-12 col-md-3 text-center text-black">
+                        <i class="fa fa-car fa-2x"></i>
+                        <p class="text-big">Доставка</p>
+                        <p>Мы осуществляем доставку по Одессе в день заказа. По Украине согласно срокам курьерской
+                            службы.</p>
+                    </div>
+
+
+                    <div class=" col-12 col-md-3 text-center text-black">
+                        <i class="fa fa-info fa-2x"></i>
+                        <p class="text-big">Поддержка</p>
+                        <p>Для консультации с клиентами действует круглосуточная поддержка.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                <div style="padding-top: 10px;" class="row">
+                    <div id="fa-icon" ; class="сol-12 col-md-4 text-center">
+                        <a href="https://instagram.com/apple_stock_?igshid=i91abrrs5tdg"><i style="color: #FF0080;"
+                                class="fa fa-instagram fa-lg"></i></a>
+                        <a href="https://t.me/apple_stock_od"><i
+                                style="color:#0080FF;margin-left: 30px; margin-right: 30px;"
+                                class="fa fa-telegram fa-lg"></i></a>
+                        <a href="#"><i style="color: #2E2EFE;" class="fa fa-facebook fa-lg  "></i></a>
+                    </div>
+                    <div class="сol-12 col-md-4 text-center">
+                        <p style="color: #E6E6E6; font-weight: 450; ">+38(063)-021-54-22</p>
+                    </div>
+                    <div class="сol-12 col-md-4 text-center">
+                        <p style="color: #E6E6E6; font-weight: 450;  "> Пироговская 7/9 к1 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="orderModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <form action="send.php" method="POST" class="modal-content contactOrderForm">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong><span class="price"></span></strong></p>
+                    <div class="form-block-form">
+                        <input type="hidden" name="order" value="" />
+                        <input type="text" name="username" placeholder="Ваше Имя">
+                        <input type="tel" name="phone" placeholder="Номер телефона">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                    <button type="submit" class="btn btn-primary">Заказать</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+        $(window).load(function () {
+            $(".twentytwenty-container").twentytwenty({
+                default_offset_pct: 0.7
+            });
+        });
+    </script>
+    <script src="/js/script.js"></script>
+    <script src="https://use.fontawesome.com/1c13f3fb74.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
